@@ -2,7 +2,7 @@
 
 A comprehensive Python project demonstrating advanced Pydantic v2 features for data validation, serialization, and business logic implementation. This project showcases modern Python development practices with type-safe data models for a financial services application.
 
-## 🚀 Features
+## Features
 
 - **Advanced Pydantic Models**: Demonstrates Pydantic v2 features including custom validators, computed fields, and serialization control
 - **Type-Safe Data Validation**: Robust validation with custom error messages and business logic constraints
@@ -12,7 +12,7 @@ A comprehensive Python project demonstrating advanced Pydantic v2 features for d
 - **CamelCase/SnakeCase Support**: Automatic field aliasing for API compatibility
 - **Decimal Precision**: Proper monetary calculations with decimal arithmetic
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 PydaticZad/
@@ -37,7 +37,7 @@ PydaticZad/
     └── test_models.py    # Model tests
 ```
 
-## 🛠 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -68,7 +68,7 @@ PydaticZad/
    # Edit .env file if needed (default VALIDATION_MODE=lax)
    ```
 
-## 🎯 Usage
+## Usage
 
 ### Running the Demonstration
 
@@ -97,7 +97,7 @@ Total portfolio: 11500
 Risk score: High
 ```
 
-## 📋 Model Descriptions
+## Model Descriptions
 
 ### User Model (`models/user.py`)
 - **Fields**: user_id, email, age, address, social_security_number
@@ -138,7 +138,7 @@ Risk score: High
   - Strict/lax validation modes
   - Configurable via .env file
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -155,7 +155,7 @@ DEBUG=True          # Debug mode
 - **lax**: More permissive validation (default)
 - **strict**: Strict type checking (rejects string numbers as integers)
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 
@@ -169,7 +169,7 @@ Or run specific tests:
 python -m pytest tests/test_models.py -v
 ```
 
-## 📝 Error Handling
+## Error Handling
 
 The `error_handling/error_parser.py` module provides user-friendly error messages:
 
@@ -186,7 +186,7 @@ except ValidationError as e:
         print(f"{error['location']}: {error['message']}")
 ```
 
-## 🔍 Key Pydantic Features Demonstrated
+## Key Pydantic Features Demonstrated
 
 - **Custom Validators**: `@field_validator` decorators
 - **Computed Fields**: `@computed_field` for dynamic properties
@@ -198,7 +198,7 @@ except ValidationError as e:
 - **Nested Models**: Complex data structures
 - **Enum Validation**: Restricted value sets
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature-name`
@@ -208,28 +208,4 @@ except ValidationError as e:
 6. Push to branch: `git push origin feature-name`
 7. Create a Pull Request
 
-## 📄 License
-
-This project is for educational purposes. Feel free to use and modify as needed.
-
-## 🆘 Troubleshooting
-
-### Common Issues
-
-1. **Import Errors**: Ensure all dependencies are installed with `pip install -r requirements.txt`
-
-2. **Environment File Not Found**: Copy `.env.example` to `.env`
-
-3. **Validation Too Strict**: Change `VALIDATION_MODE=lax` in `.env`
-
-4. **Python Version**: Requires Python 3.8+ for full Pydantic v2 support
-
-### Getting Help
-
-- Check the [Pydantic Documentation](https://docs.pydantic.dev/)
-- Review the code comments for implementation details
-- Run `python main.py` to see working examples
-
 ---
-
-**Built with ❤️ using Pydantic v2**
