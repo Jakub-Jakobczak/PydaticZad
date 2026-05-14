@@ -43,30 +43,6 @@ PydaticZad/
 - Python 3.8+
 - pip package manager
 
-### Setup Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Jakub-Jakobczak/PydaticZad.git
-   cd PydaticZad
-   ```
-
-2. **Create virtual environment** (recommended)
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure environment**
-   ```bash
-   cp .env.example .env
-   # Edit .env file if needed (default VALIDATION_MODE=lax)
-   ```
 
 ## Usage
 
